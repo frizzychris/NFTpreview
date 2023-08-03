@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit';
+    font-weight: 400;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+}
+
+.card {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 290px;
+    height: 550px;
+    padding: 25px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0 30px 45px 40px hsl(217, 54%, 5%);
+}
+
+.container {
+    position: relative;
+}
+
+.box {
+    border-radius: 10px;
+    width: 290px;
+    height: 290px;
+}
+
+.overlay {
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: hsla(178, 100%, 50%, 0.3);
+    opacity: 0;
+}
+
+.overlay img {
+    width: 15%;
+    height: 15%;
+}
+
+.overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 22px;
+    color: white;
+}
+
+.text {
+    font-size: 18px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.credit {
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+
+.credit, .time {
+    display: flex;
+    align-items: center;
+}
+
+.credit img, .time img {
+    margin-right: 5px;
+}
+
+
+.copyright {
+    display: flex;
+    align-items: center;
+    border-top: 0.5px solid hsl(215, 32%, 27%);
+    padding: 15px 0 8px 0;
+}
+
+.copyright img {
+    width: 30px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.copyright span {
+    font-weight: 600;
+    color: white;
+}
+
+.name {
+    margin-left: 15px;
+}
+
+.copyright span:hover, .title:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
